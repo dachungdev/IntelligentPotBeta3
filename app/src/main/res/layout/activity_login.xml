@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/launch_register_btn"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorWhite"
+        android:text="注册"/>
+
+    <TextView
+        android:id="@+id/launch_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_below="@id/launch_register_btn"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:text="欢迎登录智能盆栽"/>
+
+    <EditText
+        android:id="@+id/launch_account_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/launch_title_tv"
+        android:layout_alignRight="@id/launch_register_btn"
+        android:layout_alignLeft="@id/launch_title_tv"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:hint="手机号"/>
+
+    <EditText
+        android:id="@+id/launch_password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/launch_account_edit"
+        android:layout_alignRight="@id/launch_register_btn"
+        android:layout_alignLeft="@id/launch_title_tv"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:hint="登录密码"/>
+
+    <Button
+        android:id="@+id/launch_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/launch_password_edit"
+        android:layout_alignRight="@id/launch_register_btn"
+        android:layout_alignLeft="@id/launch_title_tv"
+        android:layout_marginTop="30dp"
+        android:padding="13dp"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:text="登录"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/launch_change_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/launch_login_btn"
+        android:layout_alignLeft="@id/launch_title_tv"
+        android:layout_marginTop="18dp"
+        android:textSize="18dp"
+        android:text="手机号登录"/>
+
+    <TextView
+        android:id="@+id/launch_forget_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/launch_login_btn"
+        android:layout_alignRight="@id/launch_register_btn"
+        android:layout_marginTop="18dp"
+        android:textSize="18dp"
+        android:text="忘记密码"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/launch_register_btn"
+        android:layout_alignLeft="@id/launch_title_tv"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/launch_decrete_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:textSize="18dp"
+            android:text="---------------- 第三方登录 ----------------"/>
+
+        <ImageView
+            android:id="@+id/launch_weixinlogo_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/launch_decrete_tv"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:src="@mipmap/weixinlogo"/>
+
+        <ImageView
+            android:id="@+id/launch_youkulogo_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/launch_decrete_tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="100dp"
+            android:src="@mipmap/youkelogo"/>
+
+        <TextView
+            android:id="@+id/launch_weixin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/launch_weixinlogo_img"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:text="微信登录"/>
+
+        <TextView
+            android:id="@+id/launch_youke_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/launch_youkulogo_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:text="游客登录"/>
+
+        <LinearLayout
+            android:id="@+id/launch_phone_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/launch_weixin_tv"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/phonelogo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorLightBlack"
+                android:textStyle="italic"
+                android:text="400-800-900"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/launch_phone_layout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="13dp"
+                android:text="登录代表您已同意"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightBlue"
+                android:layout_marginLeft="1dp"
+                android:textSize="13dp"
+                android:text="《智能盆栽用户协议》"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
