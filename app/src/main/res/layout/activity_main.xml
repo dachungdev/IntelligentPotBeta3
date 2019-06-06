@@ -6,23 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/main_title_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="25dp"
-        android:textColor="@color/colorPrimary"
-        android:padding="10dp"
-        android:text="title"/>
-
     <FrameLayout
         android:id="@+id/main_body_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/main_title_tv"
+        android:layout_alignParentTop="true"
         android:layout_above="@+id/main_bottom_layout"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorWhite">
     </FrameLayout>
 
     <include layout="@layout/main_bottom_item"

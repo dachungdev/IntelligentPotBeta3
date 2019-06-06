@@ -11,29 +11,35 @@ import android.widget.Button;
  * 登录界面
  */
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button launchRegiterBtn;
-    private Button launchLoginBtn;
+    private Button loginRegiterBtn;
+    private Button loginLoginBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        launchRegiterBtn = (Button) findViewById(R.id.launch_register_btn);
-        launchLoginBtn = (Button) findViewById(R.id.launch_login_btn);
-        launchRegiterBtn.setOnClickListener(this);
-        launchLoginBtn.setOnClickListener(this);
+        loginRegiterBtn = (Button) findViewById(R.id.login_register_btn);
+        loginLoginBtn = (Button) findViewById(R.id.login_login_btn);
+        loginRegiterBtn.setOnClickListener(this);
+        loginLoginBtn.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v){
         switch (v.getId()){
-            case R.id.launch_register_btn:
-                Laucher.LaunchActivity(MyApplication.getContext(),MainActivity.class);
+            case R.id.login_register_btn:
+                Laucher.launchActivity(MyApplication.getContext(),MainActivity.class);
                 break;
-            case R.id.launch_login_btn:
-                Laucher.LaunchActivity(MyApplication.getContext(),MainActivity.class);
+            case R.id.login_login_btn:
+                Laucher.launchActivity(MyApplication.getContext(),MainActivity.class);
             default:
                 break;
         }
+    }
+
+    @Override
+    public void onStop(){
+        super.onStop();
+        finish();
     }
 }

@@ -21,7 +21,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/colorWhite"
-        android:text="直接进入"/>
+        android:text="@string/launch_go"/>
 
     <TextView
         android:id="@+id/launch_tv"

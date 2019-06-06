@@ -6,23 +6,27 @@
     android:orientation="horizontal">
 
     <LinearLayout
+        android:id="@+id/huapeng_lin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
         <ImageView
+            android:id="@+id/huapeng_img"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
-            android:src="@mipmap/huapengwait"/>
+            android:src="@drawable/main_bottom_item_huapeng"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="我的花盆"/>
+            android:textColor="@drawable/main_bottom_item_text"
+            android:text="@string/main_huapeng"/>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/baike_lin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -31,15 +35,17 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
-            android:src="@mipmap/baikewait"/>
+            android:src="@drawable/main_bottom_item_baike"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="花草百科"/>
+            android:textColor="@drawable/main_bottom_item_text"
+            android:text="@string/main_baike"/>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/daren_lin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -48,15 +54,17 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
-            android:src="@mipmap/darenwait"/>
+            android:src="@drawable/main_bottom_item_daren"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="养花达人"/>
+            android:textColor="@drawable/main_bottom_item_text"
+            android:text="@string/main_daren"/>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/zhongxin_lin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -65,12 +73,13 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
-            android:src="@mipmap/zhongxinwait"/>
+            android:src="@drawable/main_bottom_item_zhongxin"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="个人中心"/>
+            android:textColor="@drawable/main_bottom_item_text"
+            android:text="@string/main_zhongxin"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -89,7 +89,7 @@ public class LaunchActivity extends AppCompatActivity implements View.OnClickLis
     private void launchActivityWithFlag(){
         if (launchFlag) {
             launchFlag = false;
-            Laucher.LaunchActivity(MyApplication.getContext(),LoginActivity.class);
+            Laucher.launchActivity(MyApplication.getContext(),LoginActivity.class);
         }
     }
 
