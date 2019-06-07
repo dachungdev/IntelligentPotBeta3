@@ -6,20 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/main_body_fragment"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_above="@+id/main_bottom_layout"
-        android:background="@color/colorWhite">
-    </FrameLayout>
-
-    <include layout="@layout/main_bottom_item"
-        android:id="@+id/main_bottom_layout"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_radioGroup">
+    </android.support.v4.view.ViewPager>
+    
+    <RadioGroup
+        android:id="@+id/main_radioGroup"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_margin="7dp"/>
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
 
+        <RadioButton
+            style="@style/Custom_radioButton"
+            android:drawableTop="@drawable/main_bottom_item_huapeng"
+            android:text="@string/main_huapeng"/>
+
+        <RadioButton
+            style="@style/Custom_radioButton"
+            android:drawableTop="@drawable/main_bottom_item_baike"
+            android:text="@string/main_baike"/>
+
+        <RadioButton
+            style="@style/Custom_radioButton"
+            android:drawableTop="@drawable/main_bottom_item_daren"
+            android:text="@string/main_daren"/>
+
+        <RadioButton
+            style="@style/Custom_radioButton"
+            android:drawableTop="@drawable/main_bottom_item_zhongxin"
+            android:text="@string/main_zhongxin"/>
+    </RadioGroup>
 </RelativeLayout>
