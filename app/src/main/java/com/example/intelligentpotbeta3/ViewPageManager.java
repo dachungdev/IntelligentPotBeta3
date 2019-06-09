@@ -8,6 +8,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import java.util.List;
 
+/**
+ *
+ */
 public class ViewPageManager {
     private ViewPager mViewPager;
     private RadioGroup mTabRadioGroup;

@@ -20,4 +20,13 @@
     <string name="frag_huapeng_buguang">补光</string>
     <string name="frag_huapeng_jiaoshui">浇水</string>
     <string name="frag_huapeng_baogao">报告</string>
+    <string name="frag_baike_search">请输入搜索关键词</string>
+    <string name="frag_baike_lvluodis">绿萝(学名：Epipermnum aureum)，属于麒麟叶属植物，大型常绿藤木，生长于热带地区，常攀援生长在雨林的岩石和树干上，其缠绕性强，气根发达，可以水培种植。</string>
+    <string name="frag_baike_guasudis">瓜粟(学名：Pachira macrocarpa(Cham.et Schlecht.)Walp)，俗称发财树，木棉科小乔木，高4-5米，树冠较松散，幼枝粟褐色，无毛。原产中美墨西哥至哥斯达黎加。</string>
+    <string name="frag_baike_junzilandis">君子兰(学名：Clivia miniata)，别名剑叶石蒜、大叶石蒜，是石蒜科君子兰属的观赏花。君子兰是长春市的市花。</string>
+    <string name="frag_baike_huazhudis">花烛(学名：Anthurium andraeanum Linden)，是单子叶植物纲天南星科花烛属多年生常绿草本植物。花烛花姿奇特美研。花期持久，适合盆栽、切花或庭院荫蔽处丛植美化。</string>
+    <string name="frag_baike_lvluoname">绿萝</string>
+    <string name="frag_baike_guasuname">瓜粟</string>
+    <string name="frag_baike_junzilanname">君子兰</string>
+    <string name="frag_baike_huazhuname">花烛</string>
 </resources>

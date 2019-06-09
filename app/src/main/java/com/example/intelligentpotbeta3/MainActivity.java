@@ -7,6 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.RadioGroup;
 
+import com.example.intelligentpotbeta3.baike.BaikeFragment;
+import com.example.intelligentpotbeta3.daren.DarenFragment;
+import com.example.intelligentpotbeta3.huapeng.HuapengFragment;
+import com.example.intelligentpotbeta3.zhongxin.ZhongxinFragment;
+
 import java.util.ArrayList;
 import java.util.List;
 
