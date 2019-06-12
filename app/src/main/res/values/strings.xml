@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">IntelligentPotBeta3</string>
+
+    <!--载入动画界面-->
     <string name="launch_go">直接进入</string>
+
+    <!--登录界面-->
     <string name="login_register">注册</string>
     <string name="login_title">欢迎登录智能盆栽</string>
     <string name="login_account">手机号</string>
@@ -13,13 +17,27 @@
     <string name="login_youke">游客登录</string>
     <string name="login_bottom_urge">登录代表您已同意</string>
     <string name="login_bottom_agreement">《智能盆栽用户协议》</string>
+
+    <!--主界面-->
     <string name="main_huapeng">我的花盆</string>
     <string name="main_baike">花草百科</string>
     <string name="main_daren">养花达人</string>
     <string name="main_zhongxin">个人中心</string>
+
+    <!--碎片_我的花盆-->
     <string name="frag_huapeng_buguang">补光</string>
     <string name="frag_huapeng_jiaoshui">浇水</string>
     <string name="frag_huapeng_baogao">报告</string>
+    <string name="frag_huapeng_junzilan">君子兰</string>
+    <string name="frag_huapeng_baimeigui">白玫瑰</string>
+    <string name="frag_huapeng_kangnaixin">康乃馨</string>
+    <string name="frag_huapeng_jiance">检测情况</string>
+    <string name="frag_huapeng_huangjingwnedu">环境温度:</string>
+    <string name="frag_huapeng_huangjingshidu">环境湿度:</string>
+    <string name="frag_huapeng_turangshidu">土壤湿度:</string>
+    <string name="frag_huapeng_ph">PH值:</string>
+    <string name="frag_huapeng_co2">CO²浓度:</string>
+
     <string name="frag_baike_search">请输入搜索关键词</string>
     <string name="frag_baike_lvluodis">绿萝(学名：Epipermnum aureum)，属于麒麟叶属植物，大型常绿藤木，生长于热带地区，常攀援生长在雨林的岩石和树干上，其缠绕性强，气根发达，可以水培种植。</string>
     <string name="frag_baike_guasudis">瓜粟(学名：Pachira macrocarpa(Cham.et Schlecht.)Walp)，俗称发财树，木棉科小乔木，高4-5米，树冠较松散，幼枝粟褐色，无毛。原产中美墨西哥至哥斯达黎加。</string>
@@ -29,4 +47,7 @@
     <string name="frag_baike_guasuname">瓜粟</string>
     <string name="frag_baike_junzilanname">君子兰</string>
     <string name="frag_baike_huazhuname">花烛</string>
+    <string name="frag_jingxuan_buguang">补光</string>
+    <string name="frag_jingxuan_jiaoshui">浇水</string>
+    <string name="frag_jingxuan_baogao">报告</string>
 </resources>

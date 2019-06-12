@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.RadioGroup;
 
+import com.example.intelligentpotbeta3.Tool.ViewPageManager;
 import com.example.intelligentpotbeta3.baike.BaikeFragment;
 import com.example.intelligentpotbeta3.daren.DarenFragment;
 import com.example.intelligentpotbeta3.huapeng.HuapengFragment;

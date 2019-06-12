@@ -1,4 +1,4 @@
-package com.example.intelligentpotbeta3;
+package com.example.intelligentpotbeta3.Tool;
 
 import android.app.Activity;
 import android.content.Context;

@@ -21,4 +21,110 @@
         <item name="android:button">@null</item>
     </style>
 
+    <!--huapeng碎片_floatingBTN-->
+    <style name="Custom_huapeng_floatingbtn">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    
+    <!--huapeng碎片_floatingbtntext-->
+    <style name="Custom_huapeng_floatingbtn_text">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <!--huapeng碎片_花种btn-->
+    <style name="Custom_huapeng_flower_btn">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/colorLightBlack</item>
+        <item name="android:background">@drawable/huapeng_item_btn</item>
+    </style>
+    
+    <!--huapeng碎片_数据name-->
+    <style name="Custom_huapeng_data_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorLightBlack</item>
+    </style>
+
+    <!--huapeng碎片_数据value-->
+    <style name="Custom_huapeng_data_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorLightBlack</item>
+    </style>
+
+    <!--huapeng碎片_数据image-->
+    <style name="Custom_huapeng_data_image">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_alignLeft">@id/huapeng_data_hjTemp_pic</item>
+    </style>
+
+    <!--Daren碎片顶部RadioBTN样式-->
+    <style name="Custom_daren_radioBtn">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@drawable/daren_top_item_text</item>
+        <item name="android:drawableBottom">@drawable/daren_top_item_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!--Daren碎片_精选FloatingBtn-->
+    <style name="Custom_daren_jingxuan_FloatingBtn">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@drawable/main_bottom_item_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+    
+    <!--Zhongxin碎片_设置列表-->
+    <style name="Custom_zhongxin_setting_list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableRight">@mipmap/zhongixnbackitem</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <!--zhongxin碎片_num_Ralative-->
+    <style name="Custom_zhongxin_num_relative">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--zhongxin碎片_num_num_text-->
+    <style name="Custom_zhongxin_num_num">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--zhongxin碎片_num_text-->
+    <style name="Custom_zhongxin_num_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
 </resources>

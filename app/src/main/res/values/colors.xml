@@ -10,5 +10,9 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorGreen">#2AAE6C</color>
     <color name="colorLightBlack">#858585</color>
-    <color name="colorLightBlue">#6F95FD</color>
+    <!--<color name="colorLightBlue">#6F95FD</color>-->
+    <color name="colorPink">#ff6b7c</color>
+    <color name="colorLightBlue">#6ec7ff</color>
+    <color name="colorOrange">#ff9500</color>
+    <color name="colorLightGreen">#3bcfa8</color>
 </resources>

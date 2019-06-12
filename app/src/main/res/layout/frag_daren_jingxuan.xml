@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorLightGray"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/daren_jingxuan_fengxiang"
+            style="@style/Custom_daren_jingxuan_FloatingBtn"
+            android:drawableTop="@mipmap/jingxuanfengxiang"
+            android:checked="true"
+            android:text="经验分享"/>
+
+        <RadioButton
+            android:id="@+id/daren_jingxuan_quwen"
+            style="@style/Custom_daren_jingxuan_FloatingBtn"
+            android:drawableTop="@mipmap/jingxuanquwen"
+            android:text="花草趣闻"/>
+
+        <RadioButton
+            android:id="@+id/daren_jingxuan_shenghuo"
+            style="@style/Custom_daren_jingxuan_FloatingBtn"
+            android:drawableTop="@mipmap/jingxuanshenghuo"
+            android:text="创意生活"/>
+
+        <RadioButton
+            android:id="@+id/daren_jingxuan_shicao"
+            style="@style/Custom_daren_jingxuan_FloatingBtn"
+            android:drawableTop="@mipmap/jingxuanshicaopng"
+            android:text="辩花识草"/>
+    </RadioGroup>
+
+</RelativeLayout>

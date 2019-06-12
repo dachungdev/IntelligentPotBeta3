@@ -1,24 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+    <RelativeLayout
+        android:id="@+id/zhongxin_top_title"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20dp"
-        android:padding="10dp"
-        android:text="@string/main_zhongxin"/>
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/colorGreen">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textColor="@color/colorPrimary"
-        android:text="个人中心"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/zhongxinshare"
+            android:background="@null"/>
+
+        <ImageView
+            android:id="@+id/zhongxin_user_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/zhongxinicon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/zhongxin_user_logo"
+            android:textColor="@color/colorWhite"
+            android:text="名字好难起"/>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/zhong_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/zhongxin_top_title"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            style="@style/Custom_zhongxin_num_relative">
+            <TextView
+                android:id="@+id/zhongxin_num_dongtai"
+                style="@style/Custom_zhongxin_num_num"
+                android:text="0"/>
+            <TextView
+                style="@style/Custom_zhongxin_num_text"
+                android:layout_below="@id/zhongxin_num_dongtai"
+                android:text="个人动态"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/Custom_zhongxin_num_relative">
+
+            <TextView
+                android:id="@+id/zhongxin_num_fans"
+                style="@style/Custom_zhongxin_num_num"
+                android:text="0"/>
+            <TextView
+                style="@style/Custom_zhongxin_num_text"
+                android:layout_below="@id/zhongxin_num_fans"
+                android:text="我的粉丝"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/Custom_zhongxin_num_relative">
+
+            <TextView
+                android:id="@+id/zhongxin_num_guanzhu"
+                style="@style/Custom_zhongxin_num_num"
+                android:text="0"/>
+            <TextView
+                style="@style/Custom_zhongxin_num_text"
+                android:layout_below="@id/zhongxin_num_guanzhu"
+                android:text="我的关注"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/zhongxin_setting_zhushou"
+        android:layout_below="@id/zhong_detail_info"
+        android:layout_marginTop="20dp"
+        style="@style/Custom_zhongxin_setting_list"
+        android:text="花盆助手"/>
+
+    <Button
+        android:id="@+id/zhongxin_setting_shequ"
+        style="@style/Custom_zhongxin_setting_list"
+        android:layout_below="@id/zhongxin_setting_zhushou"
+        android:text="我的社区"/>
+
+    <Button
+        android:id="@+id/zhongxin_setting_fankui"
+        style="@style/Custom_zhongxin_setting_list"
+        android:layout_below="@id/zhongxin_setting_shequ"
+        android:text="常见问题及反馈"/>
+
+    <Button
+        android:id="@+id/zhongxin_setting_xitong"
+        style="@style/Custom_zhongxin_setting_list"
+        android:layout_below="@id/zhongxin_setting_fankui"
+        android:text="系统设置"/>
+
+    <Button
+        android:id="@+id/zhongxin_setting_women"
+        style="@style/Custom_zhongxin_setting_list"
+        android:layout_below="@id/zhongxin_setting_xitong"
+        android:text="关于我们"/>
+
+    <Button
+        android:id="@+id/zhongxin_setting_tuichu"
+        style="@style/Custom_zhongxin_setting_list"
+        android:layout_below="@id/zhongxin_setting_women"
+        android:text="退出登录"/>
 
 </RelativeLayout>

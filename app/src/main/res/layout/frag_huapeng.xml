@@ -18,62 +18,50 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/buguang_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Custom_huapeng_floatingbtn"
         android:layout_below="@id/frag_huapeng_title"
         android:layout_toStartOf="@id/jiaoshui_btn"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="10dp"
         android:src="@mipmap/huapeng_buguang"
         app:fabSize="mini"/>
 
     <TextView
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
+        style="@style/Custom_huapeng_floatingbtn_text"
         android:layout_below="@id/buguang_btn"
         android:layout_alignLeft="@id/buguang_btn"
         android:gravity="center_horizontal"
-        android:layout_marginTop="3dp"
         android:text="@string/frag_huapeng_buguang"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/jiaoshui_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Custom_huapeng_floatingbtn"
         android:layout_below="@id/frag_huapeng_title"
         android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
         android:src="@mipmap/huapeng_jiaoshui"
         app:fabSize="mini"/>
 
     <TextView
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
+        style="@style/Custom_huapeng_floatingbtn_text"
         android:layout_below="@id/jiaoshui_btn"
         android:layout_alignLeft="@id/jiaoshui_btn"
         android:gravity="center_horizontal"
-        android:layout_marginTop="3dp"
         android:text="@string/frag_huapeng_jiaoshui"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/baogao_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Custom_huapeng_floatingbtn"
         android:layout_below="@id/frag_huapeng_title"
         android:layout_toEndOf="@id/jiaoshui_btn"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
         android:src="@mipmap/huapeng_baogao"
         app:fabSize="mini"/>
 
     <TextView
         android:id="@+id/huapeng_baogao_text"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
+        style="@style/Custom_huapeng_floatingbtn_text"
         android:layout_below="@id/baogao_btn"
         android:layout_alignLeft="@id/baogao_btn"
         android:gravity="center_horizontal"
-        android:layout_marginTop="3dp"
         android:text="@string/frag_huapeng_baogao"/>
 
     <ImageView
@@ -87,41 +75,27 @@
 
     <Button
         android:id="@+id/huapeng_first_btn"
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:background="@drawable/huapeng_item_btn"
+        style="@style/Custom_huapeng_flower_btn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="3dp"
         android:layout_below="@+id/huapeng_pic"
-        android:textSize="10dp"
-        android:textColor="@color/colorLightBlack"
-        android:text="君子兰"/>
+        android:text="@string/frag_huapeng_junzilan"/>
 
     <Button
         android:id="@+id/huapeng_second_btn"
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:background="@drawable/huapeng_item_btn"
+        style="@style/Custom_huapeng_flower_btn"
         android:layout_toStartOf="@id/huapeng_first_btn"
         android:layout_below="@+id/huapeng_pic"
-        android:layout_marginTop="3dp"
         android:layout_marginRight="10dp"
-        android:textSize="10dp"
-        android:textColor="@color/colorLightBlack"
-        android:text="白玫瑰"/>
+        android:text="@string/frag_huapeng_baimeigui"/>
 
     <Button
         android:id="@+id/huapeng_third_btn"
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:background="@drawable/huapeng_item_btn"
+        style="@style/Custom_huapeng_flower_btn"
         android:layout_below="@+id/huapeng_pic"
         android:layout_toEndOf="@id/huapeng_first_btn"
-        android:layout_marginTop="3dp"
         android:layout_marginLeft="10dp"
-        android:textSize="10dp"
         android:textColor="@color/colorLightBlack"
-        android:text="康乃馨"/>
+        android:text="@string/frag_huapeng_kangnaixin"/>
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -140,28 +114,19 @@
             android:layout_marginTop="7dp"
             android:textSize="20dp"
             android:textColor="@color/colorPrimary"
-            android:text="检测状况"/>
+            android:text="@string/frag_huapeng_jiance"/>
 
         <TextView
             android:id="@+id/huapeng_data_hjTemp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Custom_huapeng_data_name"
             android:layout_below="@id/huapeng_list_title"
-            android:layout_marginTop="15dp"
-            android:layout_centerHorizontal="true"
-            android:textSize="18dp"
-            android:textColor="@color/colorLightBlack"
-            android:text="环境温度:"/>
+            android:text="@string/frag_huapeng_huangjingwnedu"/>
 
         <TextView
             android:id="@+id/huapeng_data_hjTemp_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Custom_huapeng_data_value"
             android:layout_toEndOf="@id/huapeng_data_hjTemp"
             android:layout_alignTop="@id/huapeng_data_hjTemp"
-            android:layout_marginLeft="10dp"
-            android:textSize="18dp"
-            android:textColor="@color/colorLightBlack"
             android:text="27.8度"/>
 
         <ImageView
@@ -175,122 +140,76 @@
 
         <TextView
             android:id="@+id/huapeng_data_hjHumi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Custom_huapeng_data_name"
             android:layout_below="@id/huapeng_data_hjTemp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:textSize="18dp"
-            android:textColor="@color/colorLightBlack"
-            android:text="环境湿度:"/>
+            android:text="@string/frag_huapeng_huangjingshidu"/>
 
         <TextView
             android:id="@+id/huapeng_data_hjHumi_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Custom_huapeng_data_value"
             android:layout_toEndOf="@id/huapeng_data_hjHumi"
             android:layout_alignTop="@id/huapeng_data_hjHumi"
-            android:layout_marginLeft="10dp"
-            android:textSize="18dp"
-            android:textColor="@color/colorLightBlack"
             android:text="69.0%"/>
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignLeft="@id/huapeng_data_hjTemp_pic"
+            style="@style/Custom_huapeng_data_image"
             android:src="@mipmap/hjhumipic"
             android:layout_alignTop="@id/huapeng_data_hjHumi"/>
 
         <TextView
             android:id="@+id/huapeng_data_trHumi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Custom_huapeng_data_name"
             android:layout_below="@id/huapeng_data_hjHumi"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:textSize="18dp"
-            android:textColor="@color/colorLightBlack"
-            android:text="土壤湿度:"/>
+            android:text="@string/frag_huapeng_turangshidu"/>
 
         <TextView
             android:id="@+id/huapeng_data_trHumi_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Custom_huapeng_data_value"
             android:layout_toEndOf="@id/huapeng_data_trHumi"
             android:layout_alignTop="@id/huapeng_data_trHumi"
-            android:layout_marginLeft="10dp"
-            android:textSize="18dp"
-            android:textColor="@color/colorLightBlack"
             android:text="59.53%"/>
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignLeft="@id/huapeng_data_hjTemp_pic"
+            style="@style/Custom_huapeng_data_image"
             android:src="@mipmap/trhumipic"
             android:layout_alignTop="@id/huapeng_data_trHumi"/>
 
         <TextView
             android:id="@+id/huapeng_data_ph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Custom_huapeng_data_name"
             android:layout_below="@id/huapeng_data_trHumi"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:textSize="18dp"
-            android:textColor="@color/colorLightBlack"
-            android:text="PH值:"/>
+            android:text="@string/frag_huapeng_ph"/>
 
         <TextView
             android:id="@+id/huapeng_data_ph_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Custom_huapeng_data_value"
             android:layout_toEndOf="@id/huapeng_data_ph"
             android:layout_alignTop="@id/huapeng_data_ph"
-            android:layout_marginLeft="10dp"
-            android:textSize="18dp"
-            android:textColor="@color/colorLightBlack"
             android:text="6.2"/>
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignLeft="@id/huapeng_data_hjTemp_pic"
+            style="@style/Custom_huapeng_data_image"
             android:src="@mipmap/phpic"
             android:layout_alignTop="@id/huapeng_data_ph"/>
 
         <TextView
             android:id="@+id/huapeng_data_co2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Custom_huapeng_data_name"
             android:layout_below="@id/huapeng_data_ph"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
-            android:textSize="18dp"
-            android:textColor="@color/colorLightBlack"
-            android:text="CO²浓度:"/>
+            android:text="@string/frag_huapeng_co2"/>
 
         <TextView
             android:id="@+id/huapeng_data_co2_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Custom_huapeng_data_value"
             android:layout_toEndOf="@id/huapeng_data_co2"
             android:layout_alignTop="@id/huapeng_data_co2"
-            android:layout_marginLeft="10dp"
-            android:textSize="18dp"
-            android:textColor="@color/colorLightBlack"
             android:text="0.04%"/>
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignLeft="@id/huapeng_data_hjTemp_pic"
+            style="@style/Custom_huapeng_data_image"
             android:src="@mipmap/co2pic"
             android:layout_alignTop="@id/huapeng_data_co2"/>
-
-
     </RelativeLayout>
 
 

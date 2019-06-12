@@ -3,22 +3,30 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <RadioGroup
+        android:id="@+id/daren_top_rg"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:layout_height="60dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20dp"
-        android:padding="10dp"
-        android:text="@string/main_daren"/>
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textColor="@color/colorPrimary"
-        android:text="养花达人"/>
+        <RadioButton
+            style="@style/Custom_daren_radioBtn"
+            android:text="动态" />
+
+        <RadioButton
+            style="@style/Custom_daren_radioBtn"
+            android:text="精选"/>
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/daren_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/daren_top_rg">
+
+    </android.support.v4.view.ViewPager>
 
 </RelativeLayout>

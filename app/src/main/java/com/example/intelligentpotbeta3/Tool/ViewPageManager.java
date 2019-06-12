@@ -1,15 +1,16 @@
-package com.example.intelligentpotbeta3;
+package com.example.intelligentpotbeta3.Tool;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import java.util.List;
 
 /**
- *
+ * 用于管理ViewPage与Fragment结合使用
  */
 public class ViewPageManager {
     private ViewPager mViewPager;
@@ -19,7 +20,7 @@ public class ViewPageManager {
     private FragmentManager mFragmentManager;
     private FragmentPagerAdapter mAdapter;
 
-    ViewPageManager(ViewPager mViewPager,RadioGroup mTabRadioGroup,List<Fragment> mFragments,FragmentManager mFragmentManager){
+    public ViewPageManager(ViewPager mViewPager,RadioGroup mTabRadioGroup,List<Fragment> mFragments,FragmentManager mFragmentManager){
         this.mViewPager = mViewPager;
         this.mTabRadioGroup = mTabRadioGroup;
         this.mFragments = mFragments;
@@ -44,6 +45,7 @@ public class ViewPageManager {
 
         @Override
         public void onPageSelected(int i) {
+            Log.d("dachung","pageSelected:"+i+";size():"+mFragments.size());
             RadioButton radioButton = (RadioButton) mTabRadioGroup.getChildAt(i);
             radioButton.setChecked(true);
         }
